@@ -1,4 +1,4 @@
-# 🎬 MayoFlix: Intelligent Movie Recommendation System
+# 🎬 BingeBuddy: Intelligent Movie Recommendation System
 
 MayoFlix is a machine learning–driven movie recommendation system designed to deliver personalized movie suggestions based on content similarity. The system leverages **vector similarity metrics** to identify and recommend movies aligned with user preferences.
 
@@ -26,7 +26,7 @@ MayoFlix is a machine learning–driven movie recommendation system designed to 
 
 ## ⚙️ System Workflow
 
-1. Raw movie metadata is processed and transformed using NLP techniques
+1. Raw movie metadata is processed and transformed using vectorization and similarity.
 2. Relevant attributes (genres, keywords, cast, crew) are consolidated into a unified feature space
 3. Textual data is vectorized using **CountVectorizer**
 4. Pairwise similarity scores are computed using **cosine similarity**
@@ -38,8 +38,8 @@ MayoFlix is a machine learning–driven movie recommendation system designed to 
 
 ### 1. Clone the Repository
 
-git clone https://github.com/Mayank1525/MayoFlix.git
-cd MayoFlix
+git clone https://github.com/Mayank1525/BingeBuddy.git
+cd BingeBuddy
 
 ### 2. Install Dependencies
 

@@ -1,84 +1,135 @@
-# 🎬 BingeBuddy: Intelligent Movie Recommendation System
+# 🎬 BingeBuddy – Movie Recommendation System
 
-MayoFlix is a machine learning–driven movie recommendation system designed to deliver personalized movie suggestions based on content similarity. The system leverages **vector similarity metrics** to identify and recommend movies aligned with user preferences.
+## 🚀 Overview
 
----
-
-## 🚀 Key Features
-
-* Content-based movie recommendation engine
-* Similarity computation using **cosine similarity**
-* Efficient data preprocessing and feature engineering
-* Interactive web interface powered by **Streamlit**
-* Real-time movie poster rendering using external data sources
+**BingeBuddy** is a content-based movie recommendation system that helps users discover movies based on their preferences. It uses machine learning techniques to analyze movie metadata and suggest similar movies through an interactive Streamlit web application.
 
 ---
 
-## 🛠️ Technology Stack
+## 🌐 Live Demo
 
-* **Programming Language:** Python
-* **Data Processing:** Pandas, NumPy
-* **Machine Learning:** Scikit-learn
-* **Frontend / UI:** Streamlit
-* **Core Techniques:** Feature Vectorization, Similarity Analysis
+👉 [https://bingebuddy-mayo15250609.streamlit.app/](https://bingebuddy-mayo15250609.streamlit.app/)
 
 ---
 
-## ⚙️ System Workflow
+## ✨ Features
 
-1. Raw movie metadata is processed and transformed using vectorization and similarity.
-2. Relevant attributes (genres, keywords, cast, crew) are consolidated into a unified feature space
-3. Textual data is vectorized using **CountVectorizer**
-4. Pairwise similarity scores are computed using **cosine similarity**
-5. The system retrieves and displays the top relevant movie recommendations
+* 🔍 Search for movies
+* 🎯 Get top 5 similar movie recommendations
+* 🖼️ Fetch movie posters using TMDB API
+* ⚡ Fast and interactive UI built with Streamlit
+* 📊 Content-based filtering using cosine similarity
 
 ---
 
-## ▶️ Local Setup & Execution
+## 🛠️ Tech Stack
 
-### 1. Clone the Repository
+### 👨‍💻 Programming Languages
 
+* Python
+
+### 🤖 Machine Learning
+
+* Pandas
+* NumPy
+* Scikit-learn
+* Cosine Similarity
+* TF-IDF / Count Vectorization
+
+### 🌐 Web Development
+
+* Streamlit
+
+---
+
+## 🧠 How It Works
+
+1. Movie dataset is preprocessed (genres, keywords, cast, crew)
+2. Important features are combined into a single text column
+3. Text is vectorized using **CountVectorizer / TF-IDF**
+4. **Cosine similarity** is calculated between movies
+5. Based on selected movie, top similar movies are recommended
+
+---
+
+## 📂 Project Structure
+
+```bash
+BingeBuddy/
+│
+├── .devcontainer/               # Dev container configuration
+├── .idea/                      # IDE configuration files
+│
+├── Movie-recommend-system.ipynb # Model building notebook
+├── app.py                      # Streamlit frontend application
+│
+├── movie_dict.pkl              # Movie dictionary data
+├── movies.pkl                  # Movie dataset
+├── movies_dict.pkl             # Processed movie data
+├── similarity_small.pkl        # Similarity matrix
+│
+├── requirements.txt            # Project dependencies
+├── README.md                   # Project documentation
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/Mayank1525/BingeBuddy.git
 cd BingeBuddy
+```
 
-### 2. Install Dependencies
+### 2. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-### 3. Launch the Application
+### 3. Run the application
 
+```bash
 streamlit run app.py
+```
 
 ---
 
-## 📊 Future Scope
+## ⚠️ Disclaimer
 
-* Integration of collaborative filtering techniques
-* Hybrid recommendation system (content + user behavior)
-* Model optimization using deep learning approaches
-* Cloud deployment and scalability enhancements
-* User profiling and personalization features
+This project is developed for educational purposes only.
+It does not host or stream any copyrighted content.
+It only recommends movies using publicly available metadata.
 
 ---
 
-## 🙌 Acknowledgements
+## 🚀 Future Enhancements
 
-* Open-source machine learning ecosystem (Scikit-learn, Pandas)
-* Public movie datasets and APIs for metadata enrichment
+* 🔎 Auto-suggestion search bar
+* 🎭 Genre-based filtering
+* ⭐ Ratings and reviews integration
+* ❤️ Watchlist functionality
+* 🤖 Hybrid recommendation system (content + collaborative filtering)
 
 ---
 
-## 👤 Author
+## 👨‍🎓 Author
 
 **Mayank Vishwakarma**
-Aspiring Software Engineer | Machine Learning Enthusiast
+🔗 GitHub: [https://github.com/Mayank1525](https://github.com/Mayank1525)
+
+* Aspiring Software Engineer
+* Skilled in Java, Python, Machine Learning, and MERN Stack
 
 ---
 
-## 📌 Note
+## ⭐ Support
 
-This project is intended for educational and demonstration purposes, showcasing the practical implementation of recommendation system algorithms using real-world datasets.
+If you found this project useful:
+
+* Give it a ⭐ on GitHub
+* Share it with others
 
 ---
-
-⭐ If you find this project insightful, consider starring the repository.

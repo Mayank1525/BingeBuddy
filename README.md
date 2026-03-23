@@ -38,8 +38,8 @@ MayoFlix is a machine learning–driven movie recommendation system designed to 
 
 ### 1. Clone the Repository
 
-git clone https://github.com/Mayank1525/mayoflix.git
-cd mayoflix
+git clone https://github.com/Mayank1525/MayoFlix.git
+cd MayoFlix
 
 ### 2. Install Dependencies
 
